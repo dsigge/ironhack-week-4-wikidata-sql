@@ -25,7 +25,7 @@ Hypothesis 3:
 
 
 ### ERD Diagram
-(to be added later)
+![ERD Diagram]('images/ERD.PNG', 'Wikipedia ERD Diagram')
 
 
  **Project Planning:** Trello Board can be found [here](https://trello.com/b/NWCTnIAx/ironhack-week-4-jd) 
