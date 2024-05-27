@@ -4,7 +4,7 @@ Collaboration between Jayashree &amp; Daniel on Week 4's challenge
 ## Scope
 ### Dataset: Wikimedia Statistics
 
-**Business Framing:**
+#### Business Framing:
 
 **Overview:** Wikipedia is one of the world’s most visited websites and also the source for factual information for billions of people all over the world. While Wikipedia exists since twenty years, the user base is fluctuating constantly. Although one could think that Wikipedia is growing, which is the case for many of the world’s most spoken languages such as English, Spanish or French, the German language Wikipedia is actually shrinking throughout the past years. We want to investigate reasons for this anomaly. 
 
