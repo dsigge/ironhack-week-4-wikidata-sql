@@ -33,10 +33,7 @@ Hypothesis 3:
 
 **NOTES:**
 
-Notebooks files can be found in `notebook` folder
-
-SQL files can be found in `sql` folder
-
-Image files can be found in `images` folder
-
-Slides can be found in `slides` folder
+* Notebooks files can be found in `notebook` folder
+* SQL files can be found in `sql` folder
+* Image files can be found in `images` folder
+* Slides can be found in `slides` folder
