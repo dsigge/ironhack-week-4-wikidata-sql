@@ -9,9 +9,9 @@ Collaboration between Jayashree &amp; Daniel on Week 4's challenge
 **Overview:** Wikipedia is one of the world’s most visited websites and also the source for factual information for billions of people all over the world. While Wikipedia exists since twenty years, the user base is fluctuating constantly. Although one could think that Wikipedia is growing, which is the case for many of the world’s most spoken languages such as English, Spanish or French, the German language Wikipedia is actually shrinking throughout the past years. We want to investigate reasons for this anomaly. 
 
 
-Tl;Dr: What’s causing German Wikipedia to decrease in views YoY? 
-Hypothesis 1: 
-Hypothesis 2: 
+Tl;Dr: What’s causing German Wikipedia to decrease in views YoY? <br>
+Hypothesis 1: <br>
+Hypothesis 2: <br>
 Hypothesis 3: 
 
 **Things to analyse:**
