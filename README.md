@@ -17,11 +17,22 @@ Collaboration between Jayashree &amp; Daniel on Week 4's challenge
 
 Tl;Dr: What’s causing German Wikipedia to decrease in views YoY? <br>
 **Hypothesis 1:** When we see the user engagement by Locale. We observe that There is a significant difference in the number of active editors per year between the DE, EN, and FR locales on Wikipedia. EN being the highest and FR being the lowest.<br>
+![user_engagement_by_locale](images/user_engagement_by_locale.PNG)<br>
 **Hypothesis 2:** The number of new articles created each year has increased over the years across all locales. But articles created in DE is less when compared to EN.<br>
+![content_growth_de](images/content_growth_de.PNG)
+![content_growth_en](images/content_growth_en.PNG)
+![content_growth_fr](images/content_growth_fr.PNG)
+<br>
+<br>
 **Hypothesis 3:** The number of edits made by active editors is positively correlated with the number of total edits. When observed the total number of active editors for DE is 6 times less when compared to active editors for EN and it is the same with total number of edits as well.<br>
+![impact_of_active_editors](images/impact_of_active_editors.PNG)<br>
+<br>
 **Hypothesis 4:** More number of edits equate to more number of average page views. When compared DE has 6 times less average edits than EN and 8 times less average page views than EN.<br>
+![impact_of_edits_on_page_views](images/impact_of_edits_on_page_views.PNG)<br>
+<br>
 **Hypothesis 5:** Overall users prefer mobile devices to use wikipedia compared to Desktops.<br>
-
+![device_usage_patterns](images/device_usage_patterns.PNG)<br>
+<br>
 
 ### ERD Diagram
 ![ERD Diagram](images/ERD.PNG 'Wikipedia ERD Diagram')
