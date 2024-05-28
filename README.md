@@ -16,11 +16,11 @@ Collaboration between Jayashree &amp; Daniel on Week 4's challenge
 5. Device Usage Patterns
 
 Tl;Dr: What’s causing German Wikipedia to decrease in views YoY? <br>
-Hypothesis 1: When we see the user engagement by Locale. We observe that There is a significant difference in the number of active editors per year between the DE, EN, and FR locales on Wikipedia. EN being the highest and FR being the lowest.<br>
-Hypothesis 2: The number of new articles created each year has increased over the years across all locales. But articles created in DE is less when compared to EN.<br>
-Hypothesis 3: The number of edits made by active editors is positively correlated with the number of total edits. When observed the total number of active editors for DE is 6 times less when compared to active editors for EN and it is the same with total number of edits as well.<br>
-Hypothesis 4: More number of edits equate to more number of average page views. When compared DE has 6 times less average edits than EN and 8 times less average page views than EN.<br>
-Hypothesis 5: Overall users prefer mobile devices to use wikipedia compared to Desktops.<br>
+**Hypothesis 1:** When we see the user engagement by Locale. We observe that There is a significant difference in the number of active editors per year between the DE, EN, and FR locales on Wikipedia. EN being the highest and FR being the lowest.<br>
+**Hypothesis 2:** The number of new articles created each year has increased over the years across all locales. But articles created in DE is less when compared to EN.<br>
+**Hypothesis 3:** The number of edits made by active editors is positively correlated with the number of total edits. When observed the total number of active editors for DE is 6 times less when compared to active editors for EN and it is the same with total number of edits as well.<br>
+**Hypothesis 4:** More number of edits equate to more number of average page views. When compared DE has 6 times less average edits than EN and 8 times less average page views than EN.<br>
+**Hypothesis 5:** Overall users prefer mobile devices to use wikipedia compared to Desktops.<br>
 
 
 ### ERD Diagram
