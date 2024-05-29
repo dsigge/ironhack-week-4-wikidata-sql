@@ -37,47 +37,6 @@ FROM (
 GROUP BY locale, year
 ORDER BY year desc;
 
--- Query to calculate the average number of views per year by locale
-SELECT 
-    locale,
-    year,
-    ROUND(AVG(wiki_views)) AS avg_wiki_views
-FROM (
-    SELECT 
-        'DE' AS locale, year, wiki_views_de AS wiki_views
-    FROM wikipedia_data_de
-    UNION ALL
-    SELECT 
-        'EN' AS locale, year, wiki_views_en AS wiki_views
-    FROM wikipedia_data_en
-    UNION ALL
-    SELECT 
-        'FR' AS locale, year, wiki_views_fr AS wiki_views
-    FROM wikipedia_data_fr
-) AS combined_data
-GROUP BY locale, year
-ORDER BY year desc;
-
--- Device Usage Patterns
--- Hypothesis: Wikipedia articles are widely viewed on Mobile devices than Desktop.
--- Query to compare the proportion of views on mobile devices to desktop devices
-SELECT 
-    'DE' AS locale,
-    SUM(devices_de_mobile) AS mobile_views,
-    SUM(devices_de_desktop) AS desktop_views
-FROM wikipedia_data_de
-UNION ALL
-SELECT 
-    'EN' AS locale,
-    SUM(devices_en_mobile) AS mobile_views,
-    SUM(devices_en_desktop) AS desktop_views
-FROM wikipedia_data_en
-UNION ALL
-SELECT 
-    'FR' AS locale,
-    SUM(devices_fr_mobile) AS mobile_views,
-    SUM(devices_fr_desktop) AS desktop_views
-FROM wikipedia_data_fr;
 
 -- Content Growth
 -- Hypothesis: The number of new articles created each year has increased over the years across all locales.
@@ -100,9 +59,9 @@ FROM wikipedia_data_fr
 GROUP BY year
 ORDER BY year desc;
 
+
 -- Impact of Active Editors on Edits
 -- Hypothesis: The number of edits made by active editors is positively correlated with the number of total edits.
-
 -- Query to determine the relationship between active editors and total edits
 SELECT 
     locale,
@@ -123,9 +82,54 @@ FROM (
 ) AS combined_data
 GROUP BY locale;
 
+
+-- Impact of Edits on Page Views
+-- Hypothesis: Pages that are frequently edited experience higher page views.
+-- Query to examine the relationship between edits and page views
+SELECT 
+    locale,
+    ROUND(AVG(edits)) AS avg_edits,
+    ROUND(AVG(wiki_views)) AS avg_page_views
+FROM (
+    SELECT 
+        'DE' AS locale, edits_de AS edits, wiki_views_de AS wiki_views
+    FROM wikipedia_data_de
+    UNION ALL
+    SELECT 
+        'EN' AS locale, edits_en AS edits, wiki_views_en AS wiki_views
+    FROM wikipedia_data_en
+    UNION ALL
+    SELECT 
+        'FR' AS locale, edits_fr AS edits, wiki_views_fr AS wiki_views
+    FROM wikipedia_data_fr
+) AS combined_data
+GROUP BY locale;
+
+
+-- Device Usage Patterns
+-- Hypothesis: Wikipedia articles are widely viewed on Mobile devices than Desktop.
+-- Query to compare the proportion of views on mobile devices to desktop devices
+SELECT 
+    'DE' AS locale,
+    SUM(devices_de_mobile) AS mobile_views,
+    SUM(devices_de_desktop) AS desktop_views
+FROM wikipedia_data_de
+UNION ALL
+SELECT 
+    'EN' AS locale,
+    SUM(devices_en_mobile) AS mobile_views,
+    SUM(devices_en_desktop) AS desktop_views
+FROM wikipedia_data_en
+UNION ALL
+SELECT 
+    'FR' AS locale,
+    SUM(devices_fr_mobile) AS mobile_views,
+    SUM(devices_fr_desktop) AS desktop_views
+FROM wikipedia_data_fr;
+
+
 -- Growth in Total Pages
 -- Hypothesis: The number of total pages on Wikipedia has steadily increased over the years in each locale.
-
 -- Query to assess the trend in the number of total pages over time
 SELECT 
     year,
@@ -147,25 +151,33 @@ FROM (
 GROUP BY year, locale
 ORDER BY year desc;
 
--- Impact of Edits on Page Views
--- Hypothesis: Pages that are frequently edited experience higher page views.
 
--- Query to examine the relationship between edits and page views
+-- Query to calculate the average number of views per year by locale
 SELECT 
     locale,
-    ROUND(AVG(edits)) AS avg_edits,
-    ROUND(AVG(wiki_views)) AS avg_page_views
+    year,
+    ROUND(AVG(wiki_views)) AS avg_wiki_views
 FROM (
     SELECT 
-        'DE' AS locale, edits_de AS edits, wiki_views_de AS wiki_views
+        'DE' AS locale, year, wiki_views_de AS wiki_views
     FROM wikipedia_data_de
     UNION ALL
     SELECT 
-        'EN' AS locale, edits_en AS edits, wiki_views_en AS wiki_views
+        'EN' AS locale, year, wiki_views_en AS wiki_views
     FROM wikipedia_data_en
     UNION ALL
     SELECT 
-        'FR' AS locale, edits_fr AS edits, wiki_views_fr AS wiki_views
+        'FR' AS locale, year, wiki_views_fr AS wiki_views
     FROM wikipedia_data_fr
 ) AS combined_data
-GROUP BY locale;
+GROUP BY locale, year
+ORDER BY year desc;
+
+
+
+
+
+
+
+
+
