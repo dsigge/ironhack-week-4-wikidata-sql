@@ -17,6 +17,8 @@ select FLOOR(AVG(wiki_views_fr)) as avg_views_fr  from wikipedia_data_fr;
 -- User Engagement by Locale
 -- Hypothesis: There is a significant difference in the number of active editors per year between the DE, EN, and FR locales on Wikipedia. EN being the highest and FR being the lowest.
 -- Query to calculate the average number of active editors by locale per year
+
+-- Note: We are using more than one table so we should use Alias. If we use single table no need to write Alias at the end.
 SELECT 
     locale,
     year,
