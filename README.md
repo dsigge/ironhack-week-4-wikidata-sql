@@ -18,7 +18,7 @@ Collaboration between Jayashree &amp; Daniel on Week 4's challenge
 Tl;Dr: What’s causing German Wikipedia to decrease in views YoY? <br>
 **Hypothesis 1:** Hypothesis: There is a significant difference in the number of active editors per year between the DE, EN, and FR locales on Wikipedia. EN being the highest and FR being the lowest.<br>
 ![user_engagement_by_locale](images/user_engagement_by_locale.PNG)<br>
-![user_engagement_by_locale]('images/averageNumberOfActiveEditorsByLocalePerYear.png')<br>
+![user_engagement_by_locale](images/averageNumberOfActiveEditorsByLocalePerYear.png)<br>
 
 **Hypothesis 2:** The number of edits per editor in FE is higher compared to DE and EN.<br>
 ![impact_of_active_editors](images/impact_of_active_editors.PNG)<br>
