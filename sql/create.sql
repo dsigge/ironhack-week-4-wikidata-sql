@@ -44,7 +44,7 @@ GROUP BY locale, year
 ORDER BY year desc;
 
 -- Impact of Active Editors on Edits
--- Hypothesis: The number of edits made by Fr locale is higher compared to other locale
+-- Hypothesis: The number of edits per editor in FE is higher compared to DE and EN.
 -- Query to determine the relationship between active editors and total edits
 SELECT 
     locale,
