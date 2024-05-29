@@ -10,22 +10,19 @@ Collaboration between Jayashree &amp; Daniel on Week 4's challenge
 
 ### What was analysed?:
 1. User Engagement by Locale (yearly)
-2. Content Growth
-3. Impact of Active Editors on Edits
+2. Impact of Active Editors on Edits
+3. Growth in Total Pages
 4. Impact of Edits on Page Views
 5. Device Usage Patterns
 
 Tl;Dr: What’s causing German Wikipedia to decrease in views YoY? <br>
-**Hypothesis 1:** When we see the user engagement by Locale. We observe that There is a significant difference in the number of active editors per year between the DE, EN, and FR locales on Wikipedia. EN being the highest and FR being the lowest.<br>
+**Hypothesis 1:** Hypothesis: There is a significant difference in the number of active editors per year between the DE, EN, and FR locales on Wikipedia. EN being the highest and FR being the lowest.<br>
 ![user_engagement_by_locale](images/user_engagement_by_locale.PNG)<br>
-**Hypothesis 2:** The number of new articles created each year has increased over the years across all locales. But articles created in DE is less when compared to EN.<br>
-![content_growth_de](images/content_growth_de.PNG)
-![content_growth_en](images/content_growth_en.PNG)
-![content_growth_fr](images/content_growth_fr.PNG)
+**Hypothesis 2:** The number of edits per editor in FE is higher compared to DE and EN.<br>
+![impact_of_active_editors](images/impact_of_active_editors.PNG)
 <br>
-<br>
-**Hypothesis 3:** The number of edits made by active editors is positively correlated with the number of total edits. When observed the total number of active editors for DE is 6 times less when compared to active editors for EN and it is the same with total number of edits as well.<br>
-![impact_of_active_editors](images/impact_of_active_editors.PNG)<br>
+**Hypothesis 3:** The number of total pages on Wikipedia has steadily increased over the years in each locale.<br>
+![growth_in_total_pages](images/growth_in_total_pages.PNG)<br>
 <br>
 **Hypothesis 4:** More number of edits equate to more number of average page views. When compared DE has 6 times less average edits than EN and 8 times less average page views than EN.<br>
 ![impact_of_edits_on_page_views](images/impact_of_edits_on_page_views.PNG)<br>
