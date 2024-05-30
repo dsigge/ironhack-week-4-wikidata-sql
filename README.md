@@ -41,7 +41,7 @@ Tl;Dr: What’s causing German Wikipedia to decrease in views YoY? <br>
 ![ERD Diagram](images/ERD.PNG 'Wikipedia ERD Diagram')
 
 
- **Project Planning:** Trello Board can be found [here](https://trello.com/b/NWCTnIAx/ironhack-week-4-jd) 
+ **Project Planning:** Trello Board can be found [here](https://trello.com/b/NWCTnIAx/ironhack-week-4-jd) <br>
  Google document can be found here [here](https://docs.google.com/document/d/1DEqu8HNTyajWwS-Pat4VB1XfUk2SzjWDt5FYq-ANk-M/edit)
 
 **NOTES:**
