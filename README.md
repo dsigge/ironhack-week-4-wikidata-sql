@@ -42,11 +42,11 @@ Tl;Dr: What’s causing German Wikipedia to decrease in views YoY? <br>
 
 
  **Project Planning:** Trello Board can be found [here](https://trello.com/b/NWCTnIAx/ironhack-week-4-jd) 
-
+ Google document can be found here [here](https://docs.google.com/document/d/1DEqu8HNTyajWwS-Pat4VB1XfUk2SzjWDt5FYq-ANk-M/edit)
 
 **NOTES:**
 
-* Notebooks files can be found in `notebook` folder
+* Notebooks files can be found in `Notebook` folder
 * SQL files can be found in `sql` folder
-* Image files can be found in `images` folder
-* Slides can be found in `slides` folder
+* Image files can be found in `Images` folder
+* Presentation can be found in `Presentation` folder
